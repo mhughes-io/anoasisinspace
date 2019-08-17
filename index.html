@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HTML Head -->
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124336986-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-124336986-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Oasis in Space | O_</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/mediaqueries.css"/>
+    <link rel="icon" href="img/favicon.png">
+  </head>
+
+<!-- Page Title, Main Image & Nav Menu -->
+
+  <body>
+    <header>
+      <a href="index.html" id="logo">
+        <h1>An Oasis in Space</h1>
+      </a>
+      <div id="favicon-wrapper">
+        <a href="index.html"><img src="img/favicon.png" alt="Logo for An Oasis in Space" class="favicon"/></a>
+      </div>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropdown-button">&#9776;</button>
+          <div id="myDropdown" class="dropdown-menu">
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="explore.html">Explore</a>
+            <a href="contact.html">Contact</a>
+          </div>
+      </div>
+      <div class="responsive-wrapper">
+        <div class="responsive-menu">
+          <a href="about.html">ABOUT</a>
+          <a href="blog.html">BLOG</a>
+          <a href="explore.html">EXPLORE</a>
+          <a href="contact.html">CONTACT</a>
+        </div>
+      </div>
+    </header>
+
+
+
+<!-- Slideshow -->
+
+    <!-- Container for the image gallery -->
+    <div id="slideshow">
+
+    <!-- Full-width images -->
+      <div class="mySlides mySlides1">
+        <!-- <img src="img/machupicchu.jpg" alt="Photo of Matt looking at Machu Picchu"/> -->
+      </div>
+      <div class="mySlides mySlides2">
+        <!-- <img src="img/yosemite.jpg" alt="Photo of Yosemite National Park"/> -->
+      </div>
+      <div class="mySlides mySlides3">
+        <!-- <img src="img/crsunset.jpg" alt="Photo of a Sunset in Costa Rica"/> -->
+      </div>
+      <div class="mySlides mySlides4">
+        <!-- <img src="img/frozennymphlake.jpg" alt="Photo of a frozen Nymph Lake in Colorado"/> -->
+      </div>
+      <div class="mySlides mySlides5">
+        <!-- <img src="img/rainbowmountain.jpg" alt="Photo of Matt & RaeLynn at Rainbow Mountain in Peru"/> -->
+      </div>
+
+      <!-- Thumbnail Images -->
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="img/machupicchu.jpg" onclick="currentSlide (1)" alt="Photo of Matt looking at Machu Picchu" />
+        </div>
+        <div class="column">
+          <img class="demo" src="img/yosemite.jpg" onclick="currentSlide (2)" alt="Photo of Yosemite National Park" />
+        </div>
+        <div class="column">
+          <img class="demo" src="img/crsunset.jpg" onclick="currentSlide (3)" alt="Photo of a Sunset in Costa Rica" />
+        </div>
+        <div class="column">
+          <img class="demo" src="img/frozennymphlake.jpg" onclick="currentSlide (4)" alt="Photo of a frozen Nymph Lake in Colorado" />
+        </div>
+        <div class="column">
+          <img class="demo" src="img/rainbowmountain.jpg" onclick="currentSlide (5)" alt="Photo of Matt & RaeLynn at Rainbow Mountain in Peru" />
+        </div>
+      </div>
+    </div>
+
+
+<!-- Page Wrapper -->
+
+    <div id="wrapper">
+
+
+<!-- Social Media Icons & Links -->
+
+      <div class="border"></div>
+      <div id="social-wrap">
+        <a href="http://twitter.com/anoasisinspace" target="_blank"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"/></a>
+        <a href="http://instagram.com/anoasisinspace" target="_blank"><img src="img/instagram-wrap.png" alt="Instagram Logo" class="social-icon"/></a>
+        <a href="http://facebook.com/anoasisinspace" target="_blank"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"/></a>
+        <a href="mailto:anoasisinspace@gmail.com"><img src="img/email.jpg" alt="Email Logo" class="social-icon"/></a>
+      </div>
+
+<!-- Intro Paragraph -->
+
+
+      <div id="intro-wrap">
+        <div class="border"></div>
+        <p>Welcome to the hub of my earthly expeditions!</p>
+        <p></p>
+        <p>This site was created in an effort to share my adventures with those who I have known for years, as well as those who I have yet to meet. It offers honest guidance through the lens of a seasoned traveler with a focus on culture and nature, history and geography.</p>
+        <p>In my blogs, I weave storytelling with humor. In my explorations, I aim to inform and inspire. And in my photos, which are intertwined throughout these many pages, I hope to elicit a sense of awe.</p>
+        <p>For we live in the most ideal world; one equipped with all of the elements necessary to give us life and which permits us to explore the beauty that is all around us.</p>
+        <p>A perfect planet. An Oasis in Space.</p>
+
+
+        <div class="border"></div>
+      </div>
+
+<!-- Main Blog Image & Blog Posts -->
+
+      <div id="blog-wrap">
+        <div class="blog-left">
+          <div class="blog-background">
+            <a href="blog.html"><img src="img/skydive.jpg" alt="Photo of Matt skydiving"/><button class="button">BLOG</button></a>
+          </div>
+        </div>
+        <div class="blog-right">
+          <div id="blogs">
+            <h3>Latest Blog Posts</h3>
+            <ul class="blog-thumbs">
+              <li>
+                <article>
+                  <a href="blog/comingsoon.html">
+                    <img src="img/rockymountains.jpg" alt="#" class="blog-img"/>
+                    <h4>Coming Soon</h4>
+                    <time datetime="2018-07-01 12:00" class="blog-time">Date: TBA</time>
+                  </a>
+                </article>
+              </li>
+              <li>
+                <article>
+                  <a href="blog/comingsoon.html">
+                    <img src="img/theduke.jpg" alt="#" class="blog-img"/>
+                    <h4>Coming Soon</h4>
+                    <time datetime="2017-05-29 12:00" class="blog-time">Date: TBA</time>
+                  </a>
+                </article>
+              </li>
+              <li>
+                <article>
+                  <a href="blog/comingsoon.html">
+                    <img src="img/mpllama.jpg" alt="#" class="blog-img"/>
+                    <h4>Coming Soon</h4>
+                    <time datetime="2017-11-24 12:00" class="blog-time">Date: TBA</time>
+                  </a>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+<!-- Main Explore Image & Top Explore Links -->
+
+      <div class="clear">
+        <div class="border"></div>
+      </div>
+      <div id="explore-wrap">
+        <div class="explore-right">
+          <div class="explore-background">
+            <a href="explore.html"><img src="img/tronconessunset.jpg" alt="Photo of Matt during a sunset in Troncones, Mexico"/>
+            <button class="button">EXPLORE</button></a>
+          </div>
+        </div>
+        <div class="explore-left">
+          <div id="explores">
+            <h3>Travel Destinations</h3>
+            <ul class="explore-thumbs">
+              <li>
+                <a href="explore/comingsoon.html">
+                  <img src="img/brussels.jpg" alt="Photo of Petit Sablon in Brussels, Belgium" class="explore-img"/>
+                  <h4>TBA</h4>
+                </a>
+              </li>
+              <li>
+                <a href="explore/comingsoon.html">
+                  <img src="img/yosemitefalls.jpg" alt="Photo of Yosemite Falls" class="explore-img"/>
+                  <h4>TBA</h4>
+                </a>
+              </li>
+              <li>
+                <a href="explore/comingsoon.html">
+                  <img src="img/pinacolada.jpg" alt="Photo of a pina colada in Troncones, Mexico" class="explore-img"/>
+                  <h4>TBA</h4>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+<!-- Instagram Section -->
+
+      <div id="insta-wrap">
+        <div class="border"></div>
+        <h2>Follow on Instagram</h2>
+        <div class="border"></div>
+        <div>
+          <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/f3e2a00361f95a809637c9ecf2256b1b.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+        </div>
+      </div>
+
+<!-- About Section -->
+
+
+      <div class="border"></div>
+      <h2><a href="about.html">About Me</a></h2>
+      <div class="border"></div>
+      <div id="about-wrap">
+        <div class="about-left">
+          <a href="about.html"><img src="img/matt-troncones.jpg" alt="Photo of Matt in Troncones, Mexico" class="about-img"/></a>
+        </div>
+        <div class="about-right">
+          <p>My name is Matt Hughes and the core of my life is travel. It has fueled my choice of career, shaped where I've resided and rationalized the inherit risks associated with a constant pursuit of exploration.</p>
+          <p>In an attempt to pinpoint the precise moment in which travel cemented itself as <em>the</em> top priority, I was transported back to the summer of 2006, when a hardworking, Costa Rican family from San Joaquin de Flores welcomed me into their home. Over the course of a few weeks, my outlook on this planet, and those who reside within it, forever changed.</p>
+          <p>I have since visited over twenty countries, studied in Spain, returned to Costa Rica as a volunteer, gained dual citizenship from the United Kingdom and, as of this writing, set forth on a roughly six-month trek across the globe; no doubt increasing my country total with each passing week.</p>
+          <p>My motto in life is to <em>be present, be kind and live with no regrets.</em> Each day, I strive to embody these words.</p>
+        </div>
+      </div>
+
+<!-- Contact Section -->
+
+      <div class="border"></div>
+      <h2><a href="contact.html">Get in Touch!</a></h2>
+      <div class="border"></div>
+      <div class="row">
+        <div class="column">
+          <div id="googleMap" style="width:500%;height:200px"></div>
+        </div>
+      </div>
+      <div id="contact-wrap">
+        <div class="contact-left">
+          <div class="contact-intro">
+            <p>No matter where we find ourselves on this planet, whether separated by one mile or twelve thousand, all it takes to communicate a message is a matter of seconds.</p>
+            <p>If you have any questions or comments, I would love to hear from you!</p>
+          </div>
+        </div>
+        <div class="contact-right">
+          <div class="contact-form" class="column">
+            <form action="https://formspree.io/anoasisinspace@gmail.com" method="POST">
+              <label for="firstname">First Name</label>
+              <input type="text" id="firstname" name="firstname" placeholder="Jack" />
+              <label for="lastname">Last Name</label>
+              <input type="text" id="lastname" name="lastname" placeholder="Kerouac" />
+              <label for="email">E-Mail</label>
+              <input type="text" id="email" name="email" placeholder="paradise@theroad.com" />
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="US">United States of America</option>
+                <option disabled>──────────</option>
+                <option value="AF">Afghanistan</option>
+              	<option value="AX">Åland Islands</option>
+              	<option value="AL">Albania</option>
+              	<option value="DZ">Algeria</option>
+              	<option value="AS">American Samoa</option>
+              	<option value="AD">Andorra</option>
+              	<option value="AO">Angola</option>
+              	<option value="AI">Anguilla</option>
+              	<option value="AQ">Antarctica</option>
+              	<option value="AG">Antigua and Barbuda</option>
+              	<option value="AR">Argentina</option>
+              	<option value="AM">Armenia</option>
+              	<option value="AW">Aruba</option>
+              	<option value="AU">Australia</option>
+              	<option value="AT">Austria</option>
+              	<option value="AZ">Azerbaijan</option>
+              	<option value="BS">Bahamas</option>
+              	<option value="BH">Bahrain</option>
+              	<option value="BD">Bangladesh</option>
+              	<option value="BB">Barbados</option>
+              	<option value="BY">Belarus</option>
+              	<option value="BE">Belgium</option>
+              	<option value="BZ">Belize</option>
+              	<option value="BJ">Benin</option>
+              	<option value="BM">Bermuda</option>
+              	<option value="BT">Bhutan</option>
+              	<option value="BO">Bolivia, Plurinational State of</option>
+              	<option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+              	<option value="BA">Bosnia and Herzegovina</option>
+              	<option value="BW">Botswana</option>
+              	<option value="BV">Bouvet Island</option>
+              	<option value="BR">Brazil</option>
+              	<option value="IO">British Indian Ocean Territory</option>
+              	<option value="BN">Brunei Darussalam</option>
+              	<option value="BG">Bulgaria</option>
+              	<option value="BF">Burkina Faso</option>
+              	<option value="BI">Burundi</option>
+              	<option value="KH">Cambodia</option>
+              	<option value="CM">Cameroon</option>
+              	<option value="CA">Canada</option>
+              	<option value="CV">Cape Verde</option>
+              	<option value="KY">Cayman Islands</option>
+              	<option value="CF">Central African Republic</option>
+              	<option value="TD">Chad</option>
+              	<option value="CL">Chile</option>
+              	<option value="CN">China</option>
+              	<option value="CX">Christmas Island</option>
+              	<option value="CC">Cocos (Keeling) Islands</option>
+              	<option value="CO">Colombia</option>
+              	<option value="KM">Comoros</option>
+              	<option value="CG">Congo</option>
+              	<option value="CD">Congo, the Democratic Republic of the</option>
+              	<option value="CK">Cook Islands</option>
+              	<option value="CR">Costa Rica</option>
+              	<option value="CI">Côte d'Ivoire</option>
+              	<option value="HR">Croatia</option>
+              	<option value="CU">Cuba</option>
+              	<option value="CW">Curaçao</option>
+              	<option value="CY">Cyprus</option>
+              	<option value="CZ">Czech Republic</option>
+              	<option value="DK">Denmark</option>
+              	<option value="DJ">Djibouti</option>
+              	<option value="DM">Dominica</option>
+              	<option value="DO">Dominican Republic</option>
+              	<option value="EC">Ecuador</option>
+              	<option value="EG">Egypt</option>
+              	<option value="SV">El Salvador</option>
+              	<option value="GQ">Equatorial Guinea</option>
+              	<option value="ER">Eritrea</option>
+              	<option value="EE">Estonia</option>
+              	<option value="ET">Ethiopia</option>
+              	<option value="FK">Falkland Islands (Malvinas)</option>
+              	<option value="FO">Faroe Islands</option>
+              	<option value="FJ">Fiji</option>
+              	<option value="FI">Finland</option>
+              	<option value="FR">France</option>
+              	<option value="GF">French Guiana</option>
+              	<option value="PF">French Polynesia</option>
+              	<option value="TF">French Southern Territories</option>
+              	<option value="GA">Gabon</option>
+              	<option value="GM">Gambia</option>
+              	<option value="GE">Georgia</option>
+              	<option value="DE">Germany</option>
+              	<option value="GH">Ghana</option>
+              	<option value="GI">Gibraltar</option>
+              	<option value="GR">Greece</option>
+              	<option value="GL">Greenland</option>
+              	<option value="GD">Grenada</option>
+              	<option value="GP">Guadeloupe</option>
+              	<option value="GU">Guam</option>
+              	<option value="GT">Guatemala</option>
+              	<option value="GG">Guernsey</option>
+              	<option value="GN">Guinea</option>
+              	<option value="GW">Guinea-Bissau</option>
+              	<option value="GY">Guyana</option>
+              	<option value="HT">Haiti</option>
+              	<option value="HM">Heard Island and McDonald Islands</option>
+              	<option value="VA">Holy See (Vatican City State)</option>
+              	<option value="HN">Honduras</option>
+              	<option value="HK">Hong Kong</option>
+              	<option value="HU">Hungary</option>
+              	<option value="IS">Iceland</option>
+              	<option value="IN">India</option>
+              	<option value="ID">Indonesia</option>
+              	<option value="IR">Iran, Islamic Republic of</option>
+              	<option value="IQ">Iraq</option>
+              	<option value="IE">Ireland</option>
+              	<option value="IM">Isle of Man</option>
+              	<option value="IL">Israel</option>
+              	<option value="IT">Italy</option>
+              	<option value="JM">Jamaica</option>
+              	<option value="JP">Japan</option>
+              	<option value="JE">Jersey</option>
+              	<option value="JO">Jordan</option>
+              	<option value="KZ">Kazakhstan</option>
+              	<option value="KE">Kenya</option>
+              	<option value="KI">Kiribati</option>
+              	<option value="KP">Korea, Democratic People's Republic of</option>
+              	<option value="KR">Korea, Republic of</option>
+              	<option value="KW">Kuwait</option>
+              	<option value="KG">Kyrgyzstan</option>
+              	<option value="LA">Lao People's Democratic Republic</option>
+              	<option value="LV">Latvia</option>
+              	<option value="LB">Lebanon</option>
+              	<option value="LS">Lesotho</option>
+              	<option value="LR">Liberia</option>
+              	<option value="LY">Libya</option>
+              	<option value="LI">Liechtenstein</option>
+              	<option value="LT">Lithuania</option>
+              	<option value="LU">Luxembourg</option>
+              	<option value="MO">Macao</option>
+              	<option value="MK">Macedonia, the former Yugoslav Republic of</option>
+              	<option value="MG">Madagascar</option>
+              	<option value="MW">Malawi</option>
+              	<option value="MY">Malaysia</option>
+              	<option value="MV">Maldives</option>
+              	<option value="ML">Mali</option>
+              	<option value="MT">Malta</option>
+              	<option value="MH">Marshall Islands</option>
+              	<option value="MQ">Martinique</option>
+              	<option value="MR">Mauritania</option>
+              	<option value="MU">Mauritius</option>
+              	<option value="YT">Mayotte</option>
+              	<option value="MX">Mexico</option>
+              	<option value="FM">Micronesia, Federated States of</option>
+              	<option value="MD">Moldova, Republic of</option>
+              	<option value="MC">Monaco</option>
+              	<option value="MN">Mongolia</option>
+              	<option value="ME">Montenegro</option>
+              	<option value="MS">Montserrat</option>
+              	<option value="MA">Morocco</option>
+              	<option value="MZ">Mozambique</option>
+              	<option value="MM">Myanmar</option>
+              	<option value="NA">Namibia</option>
+              	<option value="NR">Nauru</option>
+              	<option value="NP">Nepal</option>
+              	<option value="NL">Netherlands</option>
+              	<option value="NC">New Caledonia</option>
+              	<option value="NZ">New Zealand</option>
+              	<option value="NI">Nicaragua</option>
+              	<option value="NE">Niger</option>
+              	<option value="NG">Nigeria</option>
+              	<option value="NU">Niue</option>
+              	<option value="NF">Norfolk Island</option>
+              	<option value="MP">Northern Mariana Islands</option>
+              	<option value="NO">Norway</option>
+              	<option value="OM">Oman</option>
+              	<option value="PK">Pakistan</option>
+              	<option value="PW">Palau</option>
+              	<option value="PS">Palestinian Territory, Occupied</option>
+              	<option value="PA">Panama</option>
+              	<option value="PG">Papua New Guinea</option>
+              	<option value="PY">Paraguay</option>
+              	<option value="PE">Peru</option>
+              	<option value="PH">Philippines</option>
+              	<option value="PN">Pitcairn</option>
+              	<option value="PL">Poland</option>
+              	<option value="PT">Portugal</option>
+              	<option value="PR">Puerto Rico</option>
+              	<option value="QA">Qatar</option>
+              	<option value="RE">Réunion</option>
+              	<option value="RO">Romania</option>
+              	<option value="RU">Russian Federation</option>
+              	<option value="RW">Rwanda</option>
+              	<option value="BL">Saint Barthélemy</option>
+              	<option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+              	<option value="KN">Saint Kitts and Nevis</option>
+              	<option value="LC">Saint Lucia</option>
+              	<option value="MF">Saint Martin (French part)</option>
+              	<option value="PM">Saint Pierre and Miquelon</option>
+              	<option value="VC">Saint Vincent and the Grenadines</option>
+              	<option value="WS">Samoa</option>
+              	<option value="SM">San Marino</option>
+              	<option value="ST">Sao Tome and Principe</option>
+              	<option value="SA">Saudi Arabia</option>
+              	<option value="SN">Senegal</option>
+              	<option value="RS">Serbia</option>
+              	<option value="SC">Seychelles</option>
+              	<option value="SL">Sierra Leone</option>
+              	<option value="SG">Singapore</option>
+              	<option value="SX">Sint Maarten (Dutch part)</option>
+              	<option value="SK">Slovakia</option>
+              	<option value="SI">Slovenia</option>
+              	<option value="SB">Solomon Islands</option>
+              	<option value="SO">Somalia</option>
+              	<option value="ZA">South Africa</option>
+              	<option value="GS">South Georgia and the South Sandwich Islands</option>
+              	<option value="SS">South Sudan</option>
+              	<option value="ES">Spain</option>
+              	<option value="LK">Sri Lanka</option>
+              	<option value="SD">Sudan</option>
+              	<option value="SR">Suriname</option>
+              	<option value="SJ">Svalbard and Jan Mayen</option>
+              	<option value="SZ">Swaziland</option>
+              	<option value="SE">Sweden</option>
+              	<option value="CH">Switzerland</option>
+              	<option value="SY">Syrian Arab Republic</option>
+              	<option value="TW">Taiwan, Province of China</option>
+              	<option value="TJ">Tajikistan</option>
+              	<option value="TZ">Tanzania, United Republic of</option>
+              	<option value="TH">Thailand</option>
+              	<option value="TL">Timor-Leste</option>
+              	<option value="TG">Togo</option>
+              	<option value="TK">Tokelau</option>
+              	<option value="TO">Tonga</option>
+              	<option value="TT">Trinidad and Tobago</option>
+              	<option value="TN">Tunisia</option>
+              	<option value="TR">Turkey</option>
+              	<option value="TM">Turkmenistan</option>
+              	<option value="TC">Turks and Caicos Islands</option>
+              	<option value="TV">Tuvalu</option>
+              	<option value="UG">Uganda</option>
+              	<option value="UA">Ukraine</option>
+              	<option value="AE">United Arab Emirates</option>
+              	<option value="GB">United Kingdom</option>
+              	<option value="UM">United States Minor Outlying Islands</option>
+              	<option value="UY">Uruguay</option>
+              	<option value="UZ">Uzbekistan</option>
+              	<option value="VU">Vanuatu</option>
+              	<option value="VE">Venezuela, Bolivarian Republic of</option>
+              	<option value="VN">Viet Nam</option>
+              	<option value="VG">Virgin Islands, British</option>
+              	<option value="VI">Virgin Islands, U.S.</option>
+              	<option value="WF">Wallis and Futuna</option>
+              	<option value="EH">Western Sahara</option>
+              	<option value="YE">Yemen</option>
+              	<option value="ZM">Zambia</option>
+              	<option value="ZW">Zimbabwe</option>
+              </select>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Live, travel, adventure, bless, and don't be sorry." style="height:100px"></textarea>
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+  </body>
+
+<!-- Footer -->
+
+      <footer class="main-footer-line">
+        <a href="http://twitter.com/anoasisinspace" target="_blank"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon-small"/></a>
+        <a href="http://instagram.com/anoasisinspace" target="_blank"><img src="img/instagram-wrap.png" alt="Instagram Logo" class="social-icon-small"/></a>
+        <a href="http://facebook.com/anoasisinspace" target="_blank"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon-small"/></a>
+        <a href="mailto:anoasisinspace@gmail.com"><img src="img/email.jpg" alt="Email Logo" class="social-icon-small"/></a>
+        <p>Copyright &copy; 2018 | An Oasis in Space</p>
+      </footer>
+      <script src="js/script.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB36s2UGfTS2aRr4Yq6W05kDD_PpLx2deI&callback=myMap"></script>
+    </div>
+</html>

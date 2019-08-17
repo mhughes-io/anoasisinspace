@@ -1,0 +1,570 @@
+/*********************************
+GENERAL
+*********************************/
+
+body {
+  font-family: 'Georgia', 'Times New Roman', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  max-height: auto;
+  margin: auto;
+}
+
+h2,
+h3 {
+  text-align: center;
+  font-variant: small-caps;
+  letter-spacing: 4px;
+}
+
+p {
+  text-align: center;
+  word-wrap: normal;
+}
+
+/* Centers body of document */
+#wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+/* Style line separator */
+.border {
+  border-top: 1px solid #117e96;
+  width: 84%;
+  margin: 55px auto;
+}
+
+/* Styles the buttons and places them in the middle of the images */
+.button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, .6);
+  color: #4a4a4a;
+  font-size: 1.25em;
+  height: 71px;
+  width: 185px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Make more transparent when hovered over */
+.button:hover {
+  background-color: rgba(255, 255, 255, .4);
+}
+
+
+
+/*********************************
+HEADING
+*********************************/
+
+header {
+  position: relative;
+}
+
+#favicon-wrapper {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.favicon {
+  display: none;
+  width: 40px;
+  margin: 22px 0 12px 40px;
+}
+
+#logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  color: #117e96;
+  text-transform: capitalize;
+  font-style: oblique;
+  text-shadow: 1px 1px 1px black;
+}
+
+#logo h1 {
+  text-align: center;
+  letter-spacing: 1px;
+  margin-left: 80px;
+  padding-top: .4em;
+  font-size: 1.55em;
+}
+
+/* Style the drop down button */
+.dropdown-button {
+  background-color: #117e96;
+  color: white;
+  padding: 1em 1.23em;
+  font-size: 1.48em;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-button:hover,
+.dropdown-button:focus {
+  background-color: #37a7bf;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: rgba(202, 224, 226, 0.6);
+  min-width: 200px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(218, 218, 218, 0.7);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: white;
+  font-weight: 500;
+  padding: 12px 16px;
+  letter-spacing: 1.6px;
+  text-shadow: 2px 2px 0 black;
+  font-size: 1.1em;
+  text-decoration: none;
+  display: block;
+}
+
+.responsive-menu a {
+  color: white;
+  letter-spacing: 1.6px;
+  text-shadow: 2px 2px 0 #37a7bf;
+  font-size: 1em;
+}
+
+.dropdown a:hover,
+.responsive-menu a:hover {
+  font-weight: bolder;
+}
+
+.dropdown a:hover {
+  font-size: 1.3em;
+}
+
+.show {
+  display: block;
+}
+
+
+
+
+
+
+
+/*********************************
+SECTION: SLIDESHOW
+*********************************/
+
+/* Position the slideshow container (needed to position the left and right arrows) */
+#slideshow {
+  position: relative;
+}
+
+.mySlides1 {
+  background: url(../img/machupicchu.jpg);
+  display: none;
+  line-height: 0;
+  margin-bottom: 2px; /* adds white line between main photo and thumbs */
+  background-repeat: no-repeat;
+  background-position: 45% 40%;
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 75%;
+}
+
+.mySlides2 {
+  background: url(../img/yosemite.jpg);
+  display: none;
+  line-height: 0;
+  margin-bottom: 2px; /* adds white line between main photo and thumbs */
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 75%;
+}
+
+.mySlides3 {
+  background: url(../img/crsunset.jpg);
+  display: none;
+  line-height: 0;
+  margin-bottom: 2px; /* adds white line between main photo and thumbs */
+  background-repeat: no-repeat;
+  background-position: 50% 85%;
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 75%;
+}
+
+.mySlides4 {
+  background: url(../img/frozennymphlake.jpg);
+  display: none;
+  line-height: 0;
+  margin-bottom: 2px; /* adds white line between main photo and thumbs */
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 75%;
+}
+
+.mySlides5 {
+  background: url(../img/rainbowmountain.jpg);
+  display: none;
+  line-height: 0;
+  margin-bottom: 2px; /* adds white line between main photo and thumbs */
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 75%;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 20%;
+  line-height: 0;
+}
+
+.column img {
+  margin: 0;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+/*********************************
+SECTION: SOCIAL MEDIA
+*********************************/
+
+/* Moves social icons away from header and centers them */
+#social-wrap {
+  text-align: center;
+  line-height: 0;
+}
+
+#social-wrap .border {
+  margin-top: 25px;
+}
+
+/* Resizes social icons and creates separation between them */
+.social-icon {
+  max-height: 38px;
+  max-width: 38px;
+  margin: -20px 4% 4px 4%;
+}
+
+/* Grows social icons when hovered over */
+.social-icon:hover {
+  transform: scale(1.25);
+}
+
+
+
+/*********************************
+SECTION: INTRO
+*********************************/
+
+/* Raises intro section toward social media links */
+#intro-wrap {
+  margin-top: -30px;
+}
+
+#intro-wrap > p {
+  width: 80%;
+  margin: 1em auto;
+}
+
+
+/*********************************
+PAGE: BLOG
+*********************************/
+
+/* Positions the button */
+.blog-background {
+  position: relative;
+  line-height: 0;
+  box-shadow: .9px .9px 5px black;
+}
+
+#blogs {
+  padding-top: 10px;
+}
+
+/* Removes all padding and bullet points */
+.blog-thumbs {
+  padding: 0;
+  list-style: none;
+}
+
+/* Arranges images horizontally and resizes them to fit screen */
+.blog-thumbs li {
+  float: left;
+  padding-top: 5px;
+  width: 30.25%;
+  margin: 1.5417% 1.5417% 45px 1.5417%;
+}
+
+.blog-img {
+  box-shadow: .9px .9px 5px black;
+  transition: filter .35s ease-in-out;
+  -webkit-filter: contrast(100%) brightness(100%);
+  filter: contrast(100%) brightness(100%);
+}
+
+.blog-img:hover {
+  -webkit-filter: contrast(130%) brightness(105%);
+  filter: contrast(130%) brightness(105%);
+}
+
+/* Edits look of captions and also moves it slightly away from image */
+.blog-thumbs h4 {
+  text-transform: capitalize;
+  font-size: 1.25em;
+  font-weight: lighter;
+  margin: 5px 0 0 0;
+}
+
+/* Edits size and style of date */
+.blog-time {
+  font-size: .7em;
+  font-style: italic;
+}
+
+
+
+/*********************************
+SECTION: EXPLORE
+*********************************/
+
+
+/* Clears the blog float */
+.clear {
+  clear: both;
+}
+
+#explores {
+  padding-top: 10px;
+}
+
+/* Positions the button */
+.explore-background {
+  position: relative;
+  line-height: 0;
+  box-shadow: .9px .9px 5px black;
+}
+
+/* Removes all padding and bullet points */
+.explore-thumbs {
+  padding: 0;
+  list-style: none;
+}
+
+/* Arranges images horizontally and resizes them to fit screen */
+.explore-thumbs li {
+  float: left;
+  padding-top: 5px;
+  width: 30.25%;
+  margin: 1.5417%;
+}
+
+.explore-img {
+  box-shadow: .9px .9px 5px black;
+  transition: filter .35s ease-in-out;
+  -webkit-filter: contrast(100%) brightness(100%);
+  filter: contrast(100%) brightness(100%);
+}
+
+.explore-img:hover {
+  -webkit-filter: contrast(130%) brightness(105%);
+  filter: contrast(130%) brightness(105%);
+}
+
+/* Edits look of captions and also brings it slightly closer to image */
+.explore-thumbs h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Garamond;
+  font-style: italic;
+  letter-spacing: 2px;
+  font-size: .9em;
+  margin: 5px 0 40px 0;
+}
+
+
+
+/*********************************
+SECTION: INSTAGRAM
+*********************************/
+
+/* Clears the explore float */
+#insta-wrap {
+  clear: both;
+}
+
+
+
+/*********************************
+PAGE: ABOUT
+*********************************/
+
+#about-wrap p {
+  margin-top: 25px;
+}
+
+.about-img {
+  display: block;
+  box-shadow: .5px .5px 3px black;
+  margin: 40px auto 40px auto;
+  max-width: 66%;
+  border-radius: 100%;
+  transition: filter .35s ease-in-out;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.about-img:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+
+
+/*********************************
+PAGE: CONTACT
+*********************************/
+
+/* Resizes contact section */
+#contact-wrap {
+  padding: 0 5%;
+}
+
+#googleMap {
+  margin-bottom: 30px;
+}
+
+.contact-intro {
+  margin-bottom: 50px;
+}
+
+/* Resizes contact form */
+.contact-form {
+  margin-top: 25px;
+  padding-right: 5%;
+}
+
+/* Style inputs */
+input[type=text],
+textarea {
+  width: 100%;
+  padding: 6px 12px 6px 7px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  margin-bottom: 22px;
+}
+
+select {
+  height: 24px;
+  width: 105.3%;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 22px;
+}
+
+label {
+  font-weight: bold;
+  font-variant: small-caps;
+  letter-spacing: .5px;
+}
+
+input[placeholder],
+textarea[placeholder] {
+  font-size: .9em;
+  font-family: cursive;
+  letter-spacing: .5px;
+}
+
+#country {
+  font-size: .75em;
+  font-weight: lighter;
+}
+
+/* Styles submit button */
+input[type=submit] {
+  background-color: #117e96;
+  color: white;
+  width: 105.3%;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #37a7bf;
+}
+
+
+
+/*********************************
+FOOTER
+*********************************/
+
+.main-footer-line {
+  clear: both;
+  font-size: 0.8em;
+  color: #b6b6b6;
+  text-align: center;
+  letter-spacing: 1.2px;
+  margin: 100px 0 23px 0;
+}
+
+.social-icon-small {
+  max-height: 20px;
+  max-width: 20px;
+  margin: 0 6px;
+}

@@ -1,0 +1,120 @@
+/*********************************
+PAGE: EXPLORE
+*********************************/
+
+
+
+<!-- Continents -->
+
+      <div id="continents-wrap">
+        <div class="border"></div>
+        <ul class="continents">
+          <a href="explore/northamerica.html"><div class="north-america"><li><h4>North America</h4></li></div></a>
+          <a href="explore/centralamerica.html"><div class="central-america"><li><h4>Central America</h4></li></div></a>
+          <a href="explore/southamerica.html"><div class="south-america"><li><h4>South America</h4></li></div></a>
+          <a href="explore/europe.html"><div class="europe"><li><h4>Europe</h4></li></div></a>
+          <a href="explore/africa.html"><div class="africa"><li><h4>Africa</h4></li></div></a>
+          <a href="explore/asia.html"><div class="asia"><li><h4>Asia</h4></li></div></a>
+        </ul>
+      </div>
+
+
+
+
+
+
+
+.continents {
+  list-style: none;
+  padding: 0;
+}
+
+.continents li {
+  float: left;
+}
+
+.continents div {
+  margin: 25px auto;
+}
+
+.north-america {
+  background: url(../img/yosemite.jpg);
+}
+
+.central-america {
+  background: url(../img/tronconessunset.jpg);
+}
+
+.south-america {
+  background: url(../img/lima.jpg);
+}
+
+.europe {
+  background: url(../img/tronconessunset.jpg);
+}
+
+.africa {
+  background: url(../img/tronconessunset.jpg);
+}
+
+.asia {
+  background: url(../img/tronconessunset.jpg);
+}
+
+.north-america,
+.central-america,
+.south-america,
+.europe,
+.africa,
+.asia {
+  background-size: cover;
+  width: 425px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+.north-america li,
+.central-america li,
+.south-america li,
+.europe li,
+.africa li,
+.asia li {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+}
+
+.north-america li::after,
+.central-america li::after,
+.south-america li::after,
+.europe li::after,
+.africa li::after,
+.asia li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5)
+}
+
+.north-america li h4,
+.central-america li h4,
+.south-america li h4,
+.europe li h4,
+.africa li h4,
+.asia li h4 {
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 1.45em;
+  letter-spacing: 2.2px;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+}
